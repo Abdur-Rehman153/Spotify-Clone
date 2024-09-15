@@ -1,0 +1,352 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.container {
+  height: 100vh;
+}
+
+.lf {
+  width: 25vw;
+  margin: 15px;
+
+  /* border: 2px solid white; */
+}
+.rt {
+  width: 75vw;
+  margin: 15px 15px 15px 0px;
+  border-radius: 10px;
+}
+.button {
+  margin-right: 30px;
+}
+.signup button {
+  background-color: #121212;
+  color: gray;
+  border: none;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 30px 35px;
+}
+.login button {
+  padding: 18px 35px;
+  border-radius: 30px;
+  margin: 15px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.home {
+  /* padding: 10px; */
+  border-radius: 10px;
+  /* height: 155px; */
+  padding: 40px;
+  font-weight: bold;
+  height: 15vh;
+}
+.home ul li {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  width: 30px;
+  padding-top: 34px;
+  font-size: x-large;
+}
+.logo {
+  justify-content: space-between;
+}
+.lib {
+  margin-top: 15px;
+  /* height: 580px; */
+  /* height: 65vh; */
+  border-radius: 10px;
+  /* width: 25vw; */
+  height: 70vh;
+}
+.library {
+  gap: 10px;
+
+  padding-top: 34px;
+  /* min-height: 50%; */
+}
+.RHS {
+  margin-left: 120px;
+  padding-top: 5px;
+}
+.mid {
+  font-size: 23px;
+  width: 140px;
+  padding-left: 0;
+  padding-top: 6px;
+  font-weight: bold;
+}
+.LHS {
+  margin-left: 33px;
+}
+/* .gridchild{
+  justify-content: end;
+
+} */
+
+.footer a {
+  color: grey;
+  margin: 5px;
+}
+.header {
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.nav {
+  padding: 30px 35px;
+}
+.forward,
+.backward {
+  padding: 3px 5px 0px 3px;
+}
+.playbar {
+  background-color: rgb(78 80 79);
+  padding: 10px;
+  height: 60px;
+  /* width: 70vw; */
+
+  gap: 30px;
+  bottom: 10px;
+  /* bottom: 38px; */
+  position: sticky;
+  /* filter: invert(1); */
+  /* border: 1px solid rgb(26, 25, 25); */
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.songbutton {
+  gap: 20px;
+  justify-content: center;
+}
+.songbutton img {
+  cursor: pointer;
+}
+.songlist {
+  /* padding: 45px; */
+  height: 380px;
+  overflow: auto;
+}
+.songlist ul li {
+  list-style-type: decimal;
+  /* margin-bottom: 10px; */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid white;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+.songname {
+  width: 150px;
+  padding: 10px;
+}
+.playnow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-left: 5px;
+  margin-right: 0px;
+  /* width: 110px; */
+  /* margin: 10px; */
+}
+.songinfo {
+  width: 250px;
+}
+.seekbar {
+  height: 2px;
+  width: 98%;
+  background: black;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  margin-left: 11px;
+  cursor: pointer;
+  filter: invert(1);
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  background: white;
+  position: relative;
+  bottom: 18px;
+  left: 0%;
+  transition: left 0.5;
+}
+.abovebar {
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hamburger {
+  display: none;
+  filter: invert(1);
+  margin-right: 30px;
+  cursor: pointer;
+}
+.cross {
+  display: none;
+  cursor: pointer;
+}
+.volume {
+  justify-content: center;
+  gap: 15px;
+  /* border: 1px solid #000; */
+}
+.songtime {
+  /* border: 1px solid #000; */
+  padding-top: 12px;
+}
+.vol {
+  cursor: pointer;
+}
+.range {
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  .lf {
+    background-color: black;
+    position: absolute;
+    left: -110%;
+    transition: all 0.3s;
+    z-index: 1;
+    width: 370px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  .lib {
+    height: auto;
+  }
+  .rt {
+    width: 100vw;
+    margin: 0;
+
+    /* padding: 0px 35px; */
+  }
+  .rt .main {
+    /* width: 100vw; */
+    height: 100vh;
+    margin: 0;
+    /* margin: 5px 0px 5px 5px; */
+    /* width: auto; */
+  }
+  .header {
+    width: 100vw;
+    margin-right: 0;
+  }
+  .artist{
+   
+    /* justify-content: center; */
+
+  }
+
+  .collection {
+    max-width: 100%;
+    max-height: 400px;
+    overflow-x: auto;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    
+    
+    /* margin-left: 30px; */
+  }
+ 
+  .cardcontainer{
+   
+    margin-left: 40px;
+    justify-content: center;
+  }
+
+  .playbar {
+    width: 94vw;
+    height: auto;
+    
+   
+    
+  }
+  .abovebar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .songbutton {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .lib {
+    width: 100%;
+  }
+  .cross {
+    display: block;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .signup button {
+    /* padding: 30px 25px; */
+    background-color: #121212;
+    color: gray;
+    border: none;
+    font-size: medium;
+    font-weight: bolder;
+    padding: 0;
+
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+  }
+  .login button {
+    /* padding: 8px 15px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    border-radius: 30px;
+    /* margin: 10px; */
+    font-size: medium;
+    font-weight: bolder;
+    height: 30px;
+    width: 90px;
+    margin: 0;
+  }
+  .songtime {
+    padding-left: 8px;
+  }
+  .songinfo {
+    width: auto;
+  }
+  .yourlib .collection{
+    max-height: 400px;
+  }
+  .albums .collection{
+    max-height: 400px;
+  }
+}
